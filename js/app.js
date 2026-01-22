@@ -34,7 +34,7 @@
       article.onclick = () => openModal(parseInt(id));
 
       article.innerHTML = `
-        <div class="portfolio-image" style="background: ${project.gradient};">
+        <div class="portfolio-image">
           <img src="${project.image}" alt="${getProjectTitle(project)}" loading="lazy" />
           <div class="portfolio-overlay">
             <span class="portfolio-link">${ui.viewDetails}</span>
@@ -69,8 +69,20 @@
     document.getElementById("modal-role").textContent = getLocalized(
       project.role,
     );
+
+    // Set logo image if available
+    const logoEl = document.getElementById("modal-logo");
+    if (project.logoImage) {
+      logoEl.style.backgroundImage = `url(${project.logoImage})`;
+      logoEl.style.display = "block";
+    } else {
+      logoEl.style.display = "none";
+    }
+
+    // Set main illustration
     document.getElementById("modal-image").style.backgroundImage =
       `url(${project.image})`;
+
     document.getElementById("modal-tags").innerHTML = project.tags
       .map((t) => `<span class="tag">${t}</span>`)
       .join("");
