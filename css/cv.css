@@ -2,39 +2,7 @@
    CV PAGE - STYLES SPÉCIFIQUES
    ===================================================== */
 
-/* CV Navigation */
-.cv-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  box-sizing: border-box;
-  background: rgba(10, 10, 10, 0.95);
-  backdrop-filter: blur(10px);
-  z-index: 1000;
-  padding: 1rem 5%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.cv-nav {
-  max-width: 1400px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.cv-logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  text-decoration: none;
-}
-
-.cv-logo span {
-  color: var(--accent);
-}
-
+/* CV Navigation Actions */
 .cv-nav-actions {
   display: flex;
   align-items: center;

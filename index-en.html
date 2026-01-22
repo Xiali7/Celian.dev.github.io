@@ -56,7 +56,7 @@
       <h2 class="section-title">About Me</h2>
       <div class="about-content">
         <div class="about-image">
-          <span class="about-emoji">👨‍💻</span>
+          <img src="img/IMG_7408.jpg" alt="Célian Jublot" />
         </div>
         <div class="about-text">
           <h3 class="about-heading">From Code to Visual</h3>
@@ -79,6 +79,33 @@
           <a href="cv-en.html" class="btn btn-outline" style="margin-top: 1rem">
             View my full CV →
           </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Digital Responsibility Section -->
+    <section id="responsibility" class="section" style="background: var(--bg-secondary);">
+      <h2 class="section-title">Training - Responsible Digital</h2>
+      <div class="responsibility-content" style="max-width: 800px; margin: 0 auto;">
+        <div style="display: flex; gap: 20px; align-items: flex-start;">
+          <div style="font-size: 3rem;">♻️</div>
+          <div>
+            <h3 style="color: var(--accent); margin-bottom: 0.5rem;">IUT Clermont Auvergne Certification</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+              I completed a <strong>specialized training in responsible digital practices</strong> integrated into my Computer Science BUT curriculum at IUT Clermont Auvergne.
+            </p>
+            <ul style="list-style: none; padding: 0; color: var(--text-secondary);">
+              <li style="margin-bottom: 0.75rem;">✓ <strong>Eco-design</strong> of software and applications</li>
+              <li style="margin-bottom: 0.75rem;">✓ <strong>Energy optimization</strong> and sustainable performance</li>
+              <li style="margin-bottom: 0.75rem;">✓ <strong>Environmental impact</strong> of digital technology</li>
+              <li style="margin-bottom: 0.75rem;">✓ <strong>Web accessibility</strong> and inclusivity</li>
+              <li style="margin-bottom: 0.75rem;">✓ <strong>Best practices</strong> in sustainable development</li>
+            </ul>
+            <p style="color: var(--text-secondary); margin-top: 1.5rem; font-size: 0.95rem;">
+              This training sensitized me to the importance of creating responsible, efficient and sustainable applications. 
+              It guides my development approach by prioritizing quality, performance and minimal environmental impact.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -222,15 +249,18 @@
         </button>
         <div class="modal-content">
           <div class="modal-header">
-            <div class="modal-image" id="modal-image"></div>
-            <div class="modal-header-info">
-              <h2 id="modal-title"></h2>
-              <div class="modal-meta">
-                <span class="modal-year" id="modal-year"></span>
-                <span class="modal-role" id="modal-role"></span>
+            <div class="modal-header-top">
+              <div class="modal-logo" id="modal-logo"></div>
+              <div class="modal-header-info">
+                <h2 id="modal-title"></h2>
+                <div class="modal-meta">
+                  <span class="modal-year" id="modal-year"></span>
+                  <span class="modal-role" id="modal-role"></span>
+                </div>
+                <div class="modal-tags" id="modal-tags"></div>
               </div>
-              <div class="modal-tags" id="modal-tags"></div>
             </div>
+            <div class="modal-image" id="modal-image"></div>
           </div>
           <div class="modal-body" id="modal-body"></div>
           <div class="modal-footer" id="modal-footer"></div>
